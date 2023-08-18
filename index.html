@@ -1,0 +1,178 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>abhishek portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(25, 25, 25);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(2, 157, 171);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(3, 3, 125);
+            font-size: 1.01rem;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(6, 6, 255);
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 50px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 2rem;
+        }
+.leftSection .buttons{
+padding: 50px 0;
+}
+        .leftSection .btn {
+            padding: 5px;
+            background-color: rgb(7, 7, 140);
+            color: white;
+            border: 2px solid white;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .rightSection img {
+            width: 80%;
+        }
+
+        .blue {
+            color: rgb(6, 6, 255);
+        }
+
+        #element {
+            color: rgb(6, 6, 255);
+        }
+
+        .SecondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .SecondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .SecondSection .box {
+            background: white;
+            width: 80vh;
+            height: 2px;
+            margin: 56px 0;
+        }
+
+        footer .text-center {
+            text-align: center;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Abhi's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="blue">Abhishek</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+                    <button class="btn">Visit Linkedin</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="webdp.png">
+            </div>
+        </section>
+        <hr>
+        <section class="SecondSection">
+            <span class="text-gray"> what I have done far</span>
+            <h1> Work Experience</h1>
+            <div class="box"></div>
+        </section>
+        <footer>
+            <div class="text-center">
+                Copyright &#169; abhisportfolio.com | All right reserved
+            </div>
+        </footer>
+    </main>
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Graphic Designer', 'Web Designer', ' and Video Editor .'],
+            typeSpeed: 50,
+        });
+    </script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</body>
+
+</html>
